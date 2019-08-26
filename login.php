@@ -3,6 +3,21 @@
 
 include('database_connection.php');
 
+$message = '';
+
+if (isset($_POST["login"])) {
+    $query = "
+    SELECT * FROM user_details
+    WHERE user_email = :user_email";
+
+    $statement = $connect->prepare($query);
+    $statement -> execute (
+        array (
+            'user_email' => $_POST["user_email"]
+        )
+    );
+}
+
 ?>
 
 <!DOCTYPE html>
