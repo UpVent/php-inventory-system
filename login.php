@@ -12,26 +12,26 @@
     <body>
         <br />
         <div class="container">
-            <h2 align="center"> UpVent Management System </h2>
+            <h1 class="h1" align="center"> UpVent Management System </h1>
         </div>
         <br />
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Login
+        <div class="container">
+            <div align="center" class="panel-default panel-heading container">
+                <h4 class="h4 mb-4">Por favor inicie sesión para continuar <i class="fas fa-lock"></i></h4>
             </div>
-            <div class="panel-body">
-                <form method="post">
-                    <div class="form-group">
-                        <label>Correo Electrónico</label>
+            <div class="container panel-body">
+                <form class="text-center border border-light p-5" method="post">
+                    <div class="container form-group mb-4">
+                        <label>Correo Electrónico  <i class="fas fa-envelope"></i></label>
                         <input type="text" name="user_email" class="form-control" required/>
                     </div>
-                    <div class="form-group">
-                        <label>Contraseña</label>
+                    <div class="container form-group mb-4">
+                        <label>Contraseña  <i class="fas fa-key"></i></label>
                         <input type="password" name="user_password" class="form-control" required />
                     </div>
-                    <div class="form-group">
-                        <input type="submit" name="login" value="Login" class="btn btn-info" />
+                    <div class="container form-group mb-4">
+                        <input type="submit" name="login" value="Login" class="btn btn-success" />
                     </div>
                 </form>
             </div>
