@@ -20,15 +20,14 @@ if (isset($_POST["login"])) {
     $count = $statement->rowCount();
 
     if ($count > 0) {
-        if (password_verify($_POST['user_password'], $row['
-        user_password'])) {
+        if (password_verify($_POST['user_password'], $row['user_password'])) {
             if ($row['user_status'] == 'Active') {
                 $_SESSION['type'] = $row['user_type'];
                 $_SESSION['user_id'] = $row['user_id'];
                 $_SESSION['user_name'] = $row['user_name'];
                 header("location:index.php");
             } else {
-               $message = "<label> Tu cuenta fue desactivada, por favor contacta con tu admin. </label>"
+                $message = "<label> Tu cuenta fue desactivada, por favor contacta con tu admin. </label>"
             }
         } else {
             $message = "<label>¡email o contraseña incorrectos!</label>"
