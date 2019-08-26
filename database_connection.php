@@ -1,11 +1,6 @@
 <?php
 
-$host = 'localhost';
-$db = 'invsys';
-$username = 'postgres';
-$password = '42IsTheAnswer';
-
-$connect = new PDO('pgsql:dbname=$db;host=$host', $username, $password);
+$connect = new PDO('pgsql:host=localhost;dbname=invsys', 'postgres', '42IsTheAnswer');
 session_start();
 
 ?>
