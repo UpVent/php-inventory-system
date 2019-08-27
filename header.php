@@ -15,6 +15,9 @@
         <div class="container">
             <h2 align="center">UpVent Management System</h2>
 
+            <nav class="navbar navbar-expand-lg navbar-dark secondary-color-dark">
+
+            </nav>
 
         </div>
 
