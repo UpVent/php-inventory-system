@@ -27,13 +27,13 @@ if (isset($_POST["login"])) {
                 $_SESSION['user_name'] = $row['user_name'];
                 header("location:index.php");
             } else {
-                $message = "<label> Tu cuenta fue desactivada, por favor contacta con tu admin. </label>"
+                $message = "<label> Tu cuenta fue desactivada, por favor contacta con tu admin. </label>";
             }
         } else {
-            $message = "<label>¡email o contraseña incorrectos!</label>"
+            $message = "<label>¡email o contraseña incorrectos!</label>";
         }
     } else {
-        $message = "<label>¡email o contraseña incorrectos!</label>"
+        $message = "<label>¡email o contraseña incorrectos!</label>";
     }
 }
 
